@@ -22,3 +22,18 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Netlify deployment
+
+`netlify.toml` sets the build command to `bun run build` and the publish directory
+to `dist`, overriding the dashboard build settings. This is a TanStack Start app
+using Nitro, with its Netlify preset explicitly selected in `netlify.toml`.
+The preset writes public assets to `dist` and the SSR handler to
+`.netlify/functions-internal`; the server handler is deployed as a Netlify Function.
+Keep the publish directory at `dist` rather than `dist/client`.
+
+The original logo and menu photos are imported directly from `src/assets/`.
+Vite generates their deployment URLs alongside the CSS and JavaScript, so the
+site does not depend on Lovable's asset proxy. The original `.asset.json`
+metadata is preserved for reference; pages use the JPEG imports. When replacing
+a photo, update the corresponding JPEG as well.

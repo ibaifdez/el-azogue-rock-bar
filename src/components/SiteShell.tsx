@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Home, UtensilsCrossed, MapPin, Instagram } from "lucide-react";
 import type { ReactNode } from "react";
-import logo from "@/assets/logo.jpg.asset.json";
+import logo from "@/assets/logo.jpg";
 import { INSTAGRAM } from "@/lib/carta";
 
 const nav = [
@@ -16,7 +16,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 md:h-16">
           <Link to="/" className="flex min-w-0 items-center gap-2">
-            <img src={logo.url} alt="El Azogue Rock" className="h-10 w-10 shrink-0 rounded-sm object-cover md:h-12 md:w-12" />
+            <img src={logo} alt="El Azogue Rock" className="h-10 w-10 shrink-0 rounded-sm object-cover md:h-12 md:w-12" />
             <span className="truncate font-display text-xl text-chrome md:text-2xl">El Azogue Rock</span>
           </Link>
           <nav className="hidden items-center gap-6 md:flex">
