@@ -23,10 +23,10 @@ function Visitanos() {
         <iframe title="Mapa El Azogue Rock" src={MAP_EMBED} className="h-72 w-full md:h-96" loading="lazy" />
       </div>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
-        <a href={MAPS} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-4 font-heading text-lg uppercase tracking-wider text-primary-foreground glow-red">
+        <a href={MAPS} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-4 font-heading text-lg uppercase tracking-wider text-primary-foreground glow-red">
           <MapPin className="h-5 w-5" /> Abrir en Google Maps
         </a>
-        <a href={INSTAGRAM} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 rounded-md border border-accent px-6 py-4 font-heading text-lg uppercase tracking-wider text-accent">
+        <a href={INSTAGRAM} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 rounded-full border border-accent px-6 py-4 font-heading text-lg uppercase tracking-wider text-accent">
           <Instagram className="h-5 w-5" /> Síguenos
         </a>
       </div>

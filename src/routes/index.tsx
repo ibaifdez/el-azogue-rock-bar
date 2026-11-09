@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { MapPin, UtensilsCrossed, Instagram, Flame, Trophy } from "lucide-react";
-import logo from "@/assets/logo.jpg.asset.json";
 import { carta, INSTAGRAM, MAPS, merch } from "@/lib/carta";
 import { SectionTitle } from "@/components/SiteShell";
 
@@ -18,19 +17,22 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const destacadas = carta[0]!.platos.slice(0, 6);
+  const heroImg = carta[0]!.platos[1]!.img;
   return (
     <>
-      <section className="relative overflow-hidden px-4 pb-12 pt-8 text-center md:pt-16">
-        <img src={logo.url} alt="Logo El Azogue Rock" className="mx-auto w-64 max-w-full animate-in fade-in zoom-in-95 duration-700 md:w-96" />
+      <section className="relative isolate overflow-hidden px-4 pb-12 pt-16 text-center md:pt-28">
+        <img src={heroImg} alt="Burger 2 Alpargatas, campeona de Álava 2023" className="absolute inset-0 -z-10 h-full w-full object-cover opacity-45" />
+        <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-fade)" }} />
+        <h1 className="font-display text-6xl leading-none text-chrome animate-in fade-in zoom-in-95 duration-700 md:text-8xl">El Azogue<span className="block text-primary">Rock</span></h1>
         <p className="mx-auto mt-4 max-w-md font-heading text-lg uppercase tracking-widest text-muted-foreground">
           Beers · Burgers · <span className="text-primary">Rock</span>
         </p>
         <p className="mx-auto mt-2 max-w-md text-muted-foreground">No puedo dejar el rock. Ni las burgers.</p>
         <div className="mx-auto mt-8 grid max-w-md gap-3 sm:grid-cols-2">
-          <Link to="/carta" className="flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-4 font-heading text-lg uppercase tracking-wider text-primary-foreground glow-red transition-transform active:scale-95">
+          <Link to="/carta" className="flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-4 font-heading text-lg uppercase tracking-wider text-primary-foreground glow-red transition-transform active:scale-95">
             <UtensilsCrossed className="h-5 w-5" /> Ver la carta
           </Link>
-          <a href={MAPS} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 rounded-md border border-accent px-6 py-4 font-heading text-lg uppercase tracking-wider text-accent transition-transform active:scale-95">
+          <a href={MAPS} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 rounded-full border border-accent px-6 py-4 font-heading text-lg uppercase tracking-wider text-accent transition-transform active:scale-95">
             <MapPin className="h-5 w-5" /> Cómo llegar
           </a>
         </div>
