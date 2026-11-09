@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CartaRouteImport } from './routes/carta'
+import { Route as VisitanosRouteImport } from './routes/visitanos'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CartaRoute = CartaRouteImport.update({
+  id: '/carta',
+  path: '/carta',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VisitanosRoute = VisitanosRouteImport.update({
+  id: '/visitanos',
+  path: '/visitanos',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/carta': typeof CartaRoute
+  '/visitanos': typeof VisitanosRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/carta': typeof CartaRoute
+  '/visitanos': typeof VisitanosRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/carta': typeof CartaRoute
+  '/visitanos': typeof VisitanosRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/carta' | '/visitanos'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/carta' | '/visitanos'
+  id: '__root__' | '/' | '/carta' | '/visitanos'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CartaRoute: typeof CartaRoute
+  VisitanosRoute: typeof VisitanosRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/carta': {
+      id: '/carta'
+      path: '/carta'
+      fullPath: '/carta'
+      preLoaderRoute: typeof CartaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/visitanos': {
+      id: '/visitanos'
+      path: '/visitanos'
+      fullPath: '/visitanos'
+      preLoaderRoute: typeof VisitanosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CartaRoute: CartaRoute,
+  VisitanosRoute: VisitanosRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
