@@ -1,25 +1,25 @@
-import p11 from "@/assets/carta/p11.jpg.asset.json";
-import p12 from "@/assets/carta/p12.jpg.asset.json";
-import p13 from "@/assets/carta/p13.jpg.asset.json";
-import p14 from "@/assets/carta/p14.jpg.asset.json";
-import p15 from "@/assets/carta/p15.jpg.asset.json";
-import p16 from "@/assets/carta/p16.jpg.asset.json";
-import p17 from "@/assets/carta/p17.jpg.asset.json";
-import p18 from "@/assets/carta/p18.jpg.asset.json";
-import p19 from "@/assets/carta/p19.jpg.asset.json";
-import p20 from "@/assets/carta/p20.jpg.asset.json";
-import p21 from "@/assets/carta/p21.jpg.asset.json";
-import p22 from "@/assets/carta/p22.jpg.asset.json";
-import p23 from "@/assets/carta/p23.jpg.asset.json";
-import p24 from "@/assets/carta/p24.jpg.asset.json";
-import p25 from "@/assets/carta/p25.jpg.asset.json";
-import p26 from "@/assets/carta/p26.jpg.asset.json";
-import p27 from "@/assets/carta/p27.jpg.asset.json";
-import p28 from "@/assets/carta/p28.jpg.asset.json";
-import p29 from "@/assets/carta/p29.jpg.asset.json";
-import p30 from "@/assets/carta/p30.jpg.asset.json";
-import p31 from "@/assets/carta/p31.jpg.asset.json";
-import p33 from "@/assets/carta/p33.jpg.asset.json";
+import p11 from "@/assets/carta/p11.jpg";
+import p12 from "@/assets/carta/p12.jpg";
+import p13 from "@/assets/carta/p13.jpg";
+import p14 from "@/assets/carta/p14.jpg";
+import p15 from "@/assets/carta/p15.jpg";
+import p16 from "@/assets/carta/p16.jpg";
+import p17 from "@/assets/carta/p17.jpg";
+import p18 from "@/assets/carta/p18.jpg";
+import p19 from "@/assets/carta/p19.jpg";
+import p20 from "@/assets/carta/p20.jpg";
+import p21 from "@/assets/carta/p21.jpg";
+import p22 from "@/assets/carta/p22.jpg";
+import p23 from "@/assets/carta/p23.jpg";
+import p24 from "@/assets/carta/p24.jpg";
+import p25 from "@/assets/carta/p25.jpg";
+import p26 from "@/assets/carta/p26.jpg";
+import p27 from "@/assets/carta/p27.jpg";
+import p28 from "@/assets/carta/p28.jpg";
+import p29 from "@/assets/carta/p29.jpg";
+import p30 from "@/assets/carta/p30.jpg";
+import p31 from "@/assets/carta/p31.jpg";
+import p33 from "@/assets/carta/p33.jpg";
 
 export type Plato = {
   banda: string;
@@ -38,27 +38,27 @@ export const carta: Seccion[] = [
     titulo: "Burgers",
     nota: "¿Celíaco? Pide la que quieras con nuestro pan SIN GLUTEN.",
     platos: [
-      { banda: "Marea", desc: "Burger Wagyu 200 gr. con champis, cebolla krunch, bacon, cheddar y salsa alioli en pan rústico cristal.", precio: "18,50", img: p12.url, tag: "Recomendación del bar" },
-      { banda: "2 Alpargatas", desc: "Burger Wagyu 200 gr. con champis, cebolla caramelizada, queso de cabra y salsa roquefort en pan brioche rojo, coronada con guindillas rebozadas y parmesano.", precio: "18,00", img: p25.url, tag: "Campeona de Álava 2023" },
-      { banda: "Azogue", desc: "Burger de buey 200 gr. con champis, cebolla krunch, bacon, cheddar y salsa alioli en pan rústico cristal.", precio: "16,50", img: p11.url },
-      { banda: "Black Sabbath", desc: "Burger Wagyu 200 gr. con salsa trufa, huevo frito, tacos de jamón y patatas paja en pan brioche rojo y negro espiral.", precio: "18,00", img: p13.url },
-      { banda: "Burger Queen", desc: "Burger Wagyu 200 gr., taquitos de torreznos de Soria, cheddar, panceta ibérica y mayonesa en pan brioche rojo y negro espiral.", precio: "18,50", img: p27.url },
-      { banda: "Marilyn Manson", desc: "Burger Wagyu 200 gr. con cheddar, panceta ibérica, mayonesa y cebolla krunch en pan brioche verde con nugget picante y jeringuilla de salsa Marea Fuego (súper picante).", precio: "18,50", img: p26.url, tag: "Súper picante" },
-      { banda: "RIP", desc: "Burger de buey 200 gr. con setas a la plancha, cheddar, lascas de parmesano y jeringuilla de mayonesa trufada en pan brioche negro.", precio: "18,00", img: p24.url },
-      { banda: "Rockstar", desc: "Burger de buey 200 gr. con aros de cebolla, bacon, cheddar, salsa tártara y jeringuilla de salsa cheddar en pan brioche negro.", precio: "16,50", img: p20.url },
-      { banda: "Bruce Springsteen", desc: "Burger Wagyu 200 gr. con salsa roquefort y pimientos rojos asados en pan brioche azul.", precio: "16,00", img: p14.url },
-      { banda: "Malaputa", desc: "Burger Wagyu 200 gr. con 5 quesos: cabra, cheddar, parmesano, mozzarella y salsa roquefort en pan brioche azul.", precio: "16,00", img: p16.url },
-      { banda: "Extremoduro", desc: "Burger de buey 200 gr. con guacamole, cheddar, salsa mejicana, salsa roquefort, migas de natxos y jalapeños en pan brioche verde.", precio: "16,00", img: p17.url },
-      { banda: "Metallica", desc: "Burger de buey 200 gr. con tomate, pimiento verde, jamón serrano y salsa roquefort en pan brioche.", precio: "16,00", img: p18.url },
-      { banda: "AC/DC", desc: "Burger de buey 200 gr. con lechuga, bacon, cheddar, salsa tártara, salsa picante y jalapeños en pan brioche.", precio: "16,00", img: p21.url, tag: "Picante" },
-      { banda: "Guns N' Roses", desc: "Burger de buey 200 gr. con lechuga, bacon, queso de cabra, salsa miel mostaza y mayonesa en pan brioche.", precio: "15,00", img: p15.url },
-      { banda: "Kutxi", desc: "Burger de buey 200 gr. con lechuga, aros de cebolla, bacon, cheddar y salsa barbacoa en pan brioche.", precio: "15,00", img: p23.url },
-      { banda: "Kolibri", desc: "Burger de buey 200 gr. con lechuga, tomate, cebolla, pepinillos, cheddar líquido y mayonesa picante en pan brioche rojo.", precio: "15,00", img: p28.url },
-      { banda: "The Rolling Stones", desc: "Costilla mechada con patata paja, cebolla krunch, salsas barbacoa y miel mostaza en pan brioche.", precio: "15,00", img: p19.url },
-      { banda: "Soziedad Alkoholika", desc: "Kebab de ternera con queso de cabra, lechuga, salsa alioli, ketchup y mayonesa.", precio: "15,00", img: p22.url },
-      { banda: "Slash", desc: "Burger de pollo con salsa barbacoa, cheddar líquido, queso de cabra y bacon en pan brioche.", precio: "14,00", img: p29.url },
-      { banda: "Iron Maiden", desc: "Burger de pollo crujiente con lechuga, tomate y mayonesa en pan brioche.", precio: "14,00", img: p30.url },
-      { banda: "U2", desc: "Burger vegana con lechuga, tomate, cebolla y ketchup en pan brioche.", precio: "15,50", img: p31.url, tag: "Vegana" },
+      { banda: "Marea", desc: "Burger Wagyu 200 gr. con champis, cebolla krunch, bacon, cheddar y salsa alioli en pan rústico cristal.", precio: "18,50", img: p12, tag: "Recomendación del bar" },
+      { banda: "2 Alpargatas", desc: "Burger Wagyu 200 gr. con champis, cebolla caramelizada, queso de cabra y salsa roquefort en pan brioche rojo, coronada con guindillas rebozadas y parmesano.", precio: "18,00", img: p25, tag: "Campeona de Álava 2023" },
+      { banda: "Azogue", desc: "Burger de buey 200 gr. con champis, cebolla krunch, bacon, cheddar y salsa alioli en pan rústico cristal.", precio: "16,50", img: p11 },
+      { banda: "Black Sabbath", desc: "Burger Wagyu 200 gr. con salsa trufa, huevo frito, tacos de jamón y patatas paja en pan brioche rojo y negro espiral.", precio: "18,00", img: p13 },
+      { banda: "Burger Queen", desc: "Burger Wagyu 200 gr., taquitos de torreznos de Soria, cheddar, panceta ibérica y mayonesa en pan brioche rojo y negro espiral.", precio: "18,50", img: p27 },
+      { banda: "Marilyn Manson", desc: "Burger Wagyu 200 gr. con cheddar, panceta ibérica, mayonesa y cebolla krunch en pan brioche verde con nugget picante y jeringuilla de salsa Marea Fuego (súper picante).", precio: "18,50", img: p26, tag: "Súper picante" },
+      { banda: "RIP", desc: "Burger de buey 200 gr. con setas a la plancha, cheddar, lascas de parmesano y jeringuilla de mayonesa trufada en pan brioche negro.", precio: "18,00", img: p24 },
+      { banda: "Rockstar", desc: "Burger de buey 200 gr. con aros de cebolla, bacon, cheddar, salsa tártara y jeringuilla de salsa cheddar en pan brioche negro.", precio: "16,50", img: p20 },
+      { banda: "Bruce Springsteen", desc: "Burger Wagyu 200 gr. con salsa roquefort y pimientos rojos asados en pan brioche azul.", precio: "16,00", img: p14 },
+      { banda: "Malaputa", desc: "Burger Wagyu 200 gr. con 5 quesos: cabra, cheddar, parmesano, mozzarella y salsa roquefort en pan brioche azul.", precio: "16,00", img: p16 },
+      { banda: "Extremoduro", desc: "Burger de buey 200 gr. con guacamole, cheddar, salsa mejicana, salsa roquefort, migas de natxos y jalapeños en pan brioche verde.", precio: "16,00", img: p17 },
+      { banda: "Metallica", desc: "Burger de buey 200 gr. con tomate, pimiento verde, jamón serrano y salsa roquefort en pan brioche.", precio: "16,00", img: p18 },
+      { banda: "AC/DC", desc: "Burger de buey 200 gr. con lechuga, bacon, cheddar, salsa tártara, salsa picante y jalapeños en pan brioche.", precio: "16,00", img: p21, tag: "Picante" },
+      { banda: "Guns N' Roses", desc: "Burger de buey 200 gr. con lechuga, bacon, queso de cabra, salsa miel mostaza y mayonesa en pan brioche.", precio: "15,00", img: p15 },
+      { banda: "Kutxi", desc: "Burger de buey 200 gr. con lechuga, aros de cebolla, bacon, cheddar y salsa barbacoa en pan brioche.", precio: "15,00", img: p23 },
+      { banda: "Kolibri", desc: "Burger de buey 200 gr. con lechuga, tomate, cebolla, pepinillos, cheddar líquido y mayonesa picante en pan brioche rojo.", precio: "15,00", img: p28 },
+      { banda: "The Rolling Stones", desc: "Costilla mechada con patata paja, cebolla krunch, salsas barbacoa y miel mostaza en pan brioche.", precio: "15,00", img: p19 },
+      { banda: "Soziedad Alkoholika", desc: "Kebab de ternera con queso de cabra, lechuga, salsa alioli, ketchup y mayonesa.", precio: "15,00", img: p22 },
+      { banda: "Slash", desc: "Burger de pollo con salsa barbacoa, cheddar líquido, queso de cabra y bacon en pan brioche.", precio: "14,00", img: p29 },
+      { banda: "Iron Maiden", desc: "Burger de pollo crujiente con lechuga, tomate y mayonesa en pan brioche.", precio: "14,00", img: p30 },
+      { banda: "U2", desc: "Burger vegana con lechuga, tomate, cebolla y ketchup en pan brioche.", precio: "15,50", img: p31, tag: "Vegana" },
     ],
   },
   {
@@ -99,7 +99,7 @@ export const carta: Seccion[] = [
     platos: [
       { banda: "Green Day", nombre: "Ensalada", desc: "Lechuga con pollo krunch, cebolla krunch, bacon, queso, migas de natxos, salsa roquefort y vinagre de Módena.", precio: "11,00" },
       { banda: "The Beatles", nombre: "Ensalada", desc: "Lechuga con calamares, cebolla morada, cebolla krunch, migas de natxos, salsa alioli y vinagre de Módena.", precio: "12,00" },
-      { banda: "Nirvana", nombre: "Costilla asada", desc: "Costilla asada muy tierna con salsa barbacoa y patatas.", precio: "16,50", img: p33.url },
+      { banda: "Nirvana", nombre: "Costilla asada", desc: "Costilla asada muy tierna con salsa barbacoa y patatas.", precio: "16,50", img: p33 },
     ],
   },
   {

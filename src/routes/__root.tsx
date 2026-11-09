@@ -11,6 +11,8 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+// Include CSS in Vite's asset graph as well as the explicit SSR stylesheet link.
+import "../styles.css";
 import { SiteShell } from "../components/SiteShell";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
