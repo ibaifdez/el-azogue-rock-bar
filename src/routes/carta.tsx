@@ -42,8 +42,8 @@ function Carta() {
             {sec.platos.map((p, i) => (
               <article key={p.banda + i} id={sec.id === "burgers" ? slug(p.banda) : undefined} className="scroll-mt-32 overflow-hidden rounded-md border border-border bg-card">
                 {p.img && (
-                  <div className="relative aspect-[16/10]">
-                    <img src={p.img} alt={`${p.banda}`} loading="lazy" className="h-full w-full object-cover" />
+                  <div className="relative aspect-[16/10] overflow-hidden bg-muted">
+                    <img src={p.img} alt={`${p.banda}`} loading="lazy" className="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-[1.03]" />
                     {p.tag && <span className="absolute left-2 top-2 rounded-sm bg-primary px-2 py-1 font-heading text-xs uppercase text-primary-foreground">{p.tag}</span>}
                   </div>
                 )}

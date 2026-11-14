@@ -21,8 +21,8 @@ function Index() {
   return (
     <>
       <section className="relative isolate overflow-hidden px-4 pb-12 pt-16 text-center md:pt-28">
-        <img src={heroImg} alt="Burger 2 Alpargatas, campeona de Álava 2023" className="absolute inset-0 -z-10 h-full w-full object-cover opacity-45" />
-        <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-fade)" }} />
+        <img src={heroImg} alt="Burger 2 Alpargatas, campeona de Álava 2023" className="absolute inset-0 -z-10 h-full w-full object-cover object-center opacity-40" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/65 via-background/50 to-background" />
         <h1 className="font-display text-6xl leading-none text-chrome animate-in fade-in zoom-in-95 duration-700 md:text-8xl">El Azogue<span className="block text-primary">Rock</span></h1>
         <p className="mx-auto mt-4 max-w-md font-heading text-lg uppercase tracking-widest text-muted-foreground">
           Beers · Burgers · <span className="text-primary">Rock</span>
